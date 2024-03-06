@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08370A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="যাকাত"
+        android:textColor="#06DDC7"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/zakatpic"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Zakat1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="যাকাত বন্টনের নির্ধারিত খাত"
+            android:textColor="#A68908"
+            android:textSize="30sp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/Zakat2"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="যাকাত ফরজ হওয়ার শর্ত"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30sp"
+            android:textColor="#A68908"
+            />
+
+        <TextView
+            android:id="@+id/Zakat3"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="নিসাব"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30sp"
+            android:textColor="#A68908"
+            />
+
+            <Button
+                android:id="@+id/refreshBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="রিফ্রেশ করুন"
+                android:textSize="15sp"
+                android:textColor="#FBE203"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ক্যালকুলেট যাকাত"
+            android:textSize="15sp"
+            android:textColor="#FBE203"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="#9C9D9E"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

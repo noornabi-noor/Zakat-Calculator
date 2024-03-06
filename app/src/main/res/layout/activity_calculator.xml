@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A19F9F"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="যাকাত ক্যালকুলেটর"
+        android:textColor="#EF065B"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="আপনার পুরো বছরের সম্পদের পরিমাণের তথ্য দিন: "
+        android:textColor="#070707"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ক্যাশ এমাউন্ট : "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ক্যাশ টাকা : "
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idcash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ব্যাংকে জমা টাকা : "
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="স্বর্ণ ও রূপার সমতুল্য টাকা: "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" স্বর্ণ :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="রূপা :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" বিনিয়োগের পরিমাণ: "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="শেয়ার বাজার :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="অন্যান্য বিনিয়োগ :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="সম্পত্তি: "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="বাসা ভাড়া থেকে আয় :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="অন্যান্য সম্পত্তি থেকে আয় :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idOthersHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ব্যবসা থেকে আয়: "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ব্যবসায় জমাকৃত আয়:"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="জমাকৃত পণ্য:"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idBusinessSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="অন্যান্য: "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="যে ঋণের টাকা ফেরত পাবেন:"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idBorwGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="পেনশন:"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idPension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="অন্যান্য মূলধন:"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idOthersProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="কৃষিকাজ থেকে আয় : "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="কৃষিকাজ থেকে প্রাপ্ত আয়:"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idAgri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ঋণের পরিমাণ: "
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ক্রেডিট কার্ড :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="পারিবারিক ঋণ :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="গাড়ির ঋণ :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ব্যবসার ঋণ :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idBusiBoro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="অন্যান্য ঋণ :"
+            android:textSize="20sp"
+            android:textColor="#051A9A"
+            android:layout_weight="10"
+            />
+
+        <EditText
+            android:id="@+id/idBoroOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:inputType="phone"
+            android:ems="5"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Calbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="হিসাব করুন "
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/refreshBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="রিফ্রেশ করুন"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FBE203"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/Prebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="আগের পেজে যান"
+        android:textSize="15sp"
+        android:textColor="#FBE203"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#9E0905"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>
+</ScrollView>
